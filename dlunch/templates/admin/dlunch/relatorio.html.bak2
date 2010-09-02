@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="/media/css/relatorio.css" />
+<img id="logo" src="logo.jpg"/>
+<div id="pagina">
+<h1 id="titulo">Relatorio de refeições da cantina</h1>
+<p id="resumo">
+   &nbsp;&nbsp;&nbsp;&nbsp; O sistema de controle de refeicoes da cantina do Instituto Federal Fluminense - Campus
+Campos-Centro, liberou no mês de fevereiro 753 (setecentos e cinquenta e tres) refeições, uma
+para cada aluno, correspondente aos 5 (cinco) dias letivos deste mes.
+</p>
+
+<p id="rodape">
+    Campos dos Goytacazes, 03 de março de 2010
+</p>
+</div>

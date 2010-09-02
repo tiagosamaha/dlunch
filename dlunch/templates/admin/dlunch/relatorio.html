@@ -1,0 +1,39 @@
+{% extends "admin/base_site.html" %}
+    
+    {% block extrastyle %}
+        <link rel="stylesheet" type="text/css" href="/media/admin/css/forms.css"/>
+        <link rel="stylesheet" type="text/css" href="/media/admin/css/base.css"/>
+        <link rel="stylesheet" type="text/css" href="/media/admin/css/global.css"/>
+        <link rel="stylesheet" type="text/css" href="/media/admin/css/widgets.css"/>
+        <script type="text/javascript" src="/admin/jsi18n/"></script>
+        <script type="text/javascript" src="/media/js/core.js"></script>
+    {% endblock %}
+    {% block content_title %}
+        <p> <a href="{% url relatorio %}"> Novo relatório </a> </p>
+    {% endblock %}
+    {% block content %}
+        
+        {{ form.media }}
+        {% if form %}            
+            <form action="" method="post">
+                {{ form.as_p }}
+            <input type="submit" value="Gerar relatório" />
+            </form>
+        {% else %}
+            <link rel="stylesheet" href="/media/css/relatorio.css" />
+            <img id="logo" src="/media/images/logo.jpg"/>
+            <div id="pagina">
+                <h1 id="titulo">Relatorio de refeições da cantina</h1>
+                <p id="resumo">
+                    &nbsp;&nbsp;&nbsp;&nbsp; O sistema de controle de refeicoes da cantina do Instituto Federal Fluminense - Campus
+                    Campos-Centro, liberou no período de {{ data_inicial }} a {{ data_final}}, uma quantindade de {{total_de_refeicoes}} refeições, uma para cada aluno.
+                </p>
+
+                <p id="rodape">
+                    Campos dos Goytacazes, {% now "d \de F \de Y" %}.
+                </p>
+            </div>
+
+        {% endif %}
+        
+    {% endblock content %}

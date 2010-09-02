@@ -1,0 +1,23 @@
+#pagina {
+    margin-right: 2em;
+    margin-left: 2em;
+}
+#logo {
+    margin: auto;
+    display: block;
+}
+
+#titulo {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#resumo {
+    margin-top: 2em;
+    text-align: justify;
+}
+
+#rodape {
+    margin-top: 20em;
+    text-align: right;
+}

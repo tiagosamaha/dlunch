@@ -1,0 +1,6 @@
+#branding h1 {
+    background: url("/media/images/iff.png") no-repeat left;
+    height: 20px;
+    padding: 10px 10px 10px 40px;
+    margin: 2px 0 2px 10px;
+}
